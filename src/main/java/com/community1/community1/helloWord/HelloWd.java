@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWd {
-    @GetMapping("/hello")
-    public String hello(@RequestParam(name="name",value = "value") String name, Model model){
+    @GetMapping("/test")
+    public String hello(@RequestParam(name="name") String name, Model model){
           model.addAttribute("name",name);
 
 
 
-          return "hello";
+          return "test";
     }
 
 }
